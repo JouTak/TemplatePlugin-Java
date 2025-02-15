@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LoginPluginForJoutak.iml" filepath="$PROJECT_DIR$/LoginPluginForJoutak.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JouTakTemplate.iml" filepath="$PROJECT_DIR$/JouTakTemplate.iml" />
     </modules>
   </component>
 </project>

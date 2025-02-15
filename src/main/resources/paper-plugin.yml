@@ -1,4 +1,0 @@
-name: LoginPluginForJoutak
-version: '${project.version}'
-main: org.joutak.loginpluginforjoutak.LoginPluginForJoutak
-api-version: '1.20'
