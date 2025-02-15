@@ -1,3 +1,1 @@
-# Joupen 
-whitelist  plugin for JouTak <ins>(joutak.ru-mc.ru)</ins>
-
+# Template Plugin для новичков с java!
