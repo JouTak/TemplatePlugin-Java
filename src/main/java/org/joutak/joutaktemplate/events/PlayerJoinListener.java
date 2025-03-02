@@ -1,6 +1,7 @@
 package org.joutak.joutaktemplate.events;
 
 import lombok.extern.slf4j.Slf4j;
+import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
@@ -13,6 +14,8 @@ import org.joutak.joutaktemplate.utils.TimeUtils;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
+
+import static org.joutak.joutaktemplate.utils.MessageUtils.createTextMessage;
 
 @Slf4j
 public class PlayerJoinListener implements Listener {
@@ -32,7 +35,8 @@ public class PlayerJoinListener implements Listener {
 
         ItemStack reward = new ItemStack(Material.GOLDEN_APPLE, 1);
         event.getPlayer().getInventory().addItem(reward);
-        event.getPlayer().sendMessage("§6Вы получили бонус за вход: §e1 Золотое яблоко!");
-        event.getPlayer().sendMessage("§aВы зашли на сервер в §e" + formattedTime);
+
+        event.getPlayer().sendMessage(createTextMessage("Вы получили бонус за вход: 1 Золотое яблоко!", NamedTextColor.BLUE));
+        event.getPlayer().sendMessage(createTextMessage("Вы зашли на сервер в " + formattedTime, NamedTextColor.GREEN));
     }
 }
