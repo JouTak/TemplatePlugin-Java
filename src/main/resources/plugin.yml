@@ -3,4 +3,6 @@ version: '${project.version}'
 main: org.joutak.joutaktemplate.JouTakTemplate
 api-version: '1.20'
 commands:
-  joutest: {}
+  playertime:
+    description: Показывает время входа и разницу
+    usage: /playertime
