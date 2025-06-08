@@ -1,6 +1,8 @@
 name: JouTakTemplate
-version: '${project.version}'
+version: 1.0-SNAPSHOT
 main: org.joutak.joutaktemplate.JouTakTemplate
-api-version: '1.20'
+api-version: 1.20
 commands:
-  joutest: {}
+  givepass:
+    description: Раздаёт проходки игрокам на N дней
+    usage: /givepass <days>
