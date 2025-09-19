@@ -1,4 +1,4 @@
-package org.joutak.joutaktemplate;
+package ru.joutak.template;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -6,10 +6,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 
 @Slf4j
-public final class JouTakTemplate extends JavaPlugin {
+public final class EmptyPlugin extends JavaPlugin {
 
     @Getter
-    private static JouTakTemplate instance;
+    private static EmptyPlugin instance;
 
     @Override
     public void onEnable() {

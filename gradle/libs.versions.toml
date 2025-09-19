@@ -1,0 +1,10 @@
+[versions]
+jdk = "21"
+paper = "1.21.5-R0.1-SNAPSHOT"
+lombok = "1.18.32"
+
+[libraries]
+paper = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+
+[plugins]
