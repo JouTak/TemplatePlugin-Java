@@ -22,12 +22,18 @@ repositories {
 dependencies {
     compileOnly(libs.paper)
     compileOnly(libs.lombok)
+
+    testImplementation(libs.bundles.junit)
 }
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(libs.versions.jdk.get())
     }
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 tasks.processResources {

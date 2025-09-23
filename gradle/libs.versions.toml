@@ -2,9 +2,17 @@
 jdk = "21"
 paper = "1.21.5-R0.1-SNAPSHOT"
 lombok = "1.18.32"
+junit = "5.13.4"
 
 [libraries]
 paper = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
 lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit"}
+junit-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+junit-launcher = { module = "org.junit.platform:junit-platform-launcher" }
 
 [plugins]
+
+[bundles]
+junit = [ "junit-jupiter", "junit-api", "junit-engine", "junit-launcher" ]
