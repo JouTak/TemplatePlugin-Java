@@ -1,6 +1,12 @@
-name: JouTakTemplate
-version: '${project.version}'
-main: org.joutak.joutaktemplate.JouTakTemplate
-api-version: '1.20'
-commands:
-  joutest: {}
+name: ${NAME}
+version: ${VERSION}
+api-version: ${MINECRAFT_VERSION}
+main: ru.joutak.template.EmptyPlugin
+description: 'A template plugin'
+authors: ['EnderDissa', 'Stunnerer', 's4dnex']
+contributors: ['technosimp']
+website: ${WEBSITE}
+
+depend: []
+libraries:
+  - 'org.projectlombok:lombok:${LOMBOK_VERSION}'
